@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* FLEXBOX Nav */
+.navbar {
+  background: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: #5cbdf8;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* GRID GALLERY */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #eee;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 900px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .grid-gallery {
+    grid-template-columns: 1fr;
+  }
+}
