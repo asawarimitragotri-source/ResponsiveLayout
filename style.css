@@ -1,72 +1,64 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
-/* FLEXBOX Nav */
+/* NAVBAR USING FLEXBOX */
 .navbar {
   background: #222;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 15px 20px;
 }
 
-.navbar nav a {
-  color: white;
-  margin: 0 10px;
+.navLinks a {
+  color: #fff;
+  margin: 0 12px;
   text-decoration: none;
+  font-size: 18px;
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
   background: #5cbdf8;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 /* GRID GALLERY */
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
   padding: 20px;
 }
 
 .card {
   background: #eee;
-  padding: 40px;
+  padding: 40px 10px;
   text-align: center;
-  border-radius: 8px;
-  font-size: 20px;
+  font-size: 22px;
+  border-radius: 10px;
 }
 
 /* FOOTER */
 .footer {
   background: #222;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 15px;
 }
 
-/* RESPONSIVE BREAKPOINTS */
-@media (max-width: 900px) {
-  .grid-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
+/* EXTRA MOBILE TWEAK */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .grid-gallery {
-    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
+
